@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: tahoma;
+}
+span, img, p, .text {
+    animation: hover 3s forwards;
+}
+h1 {
+    font-size: 28px;
+    margin: 5px;
+    padding: 0;
+    margin-top: 125px;
+    width: 220px;
+    height: 50px;
+    color: white;
+    animation: hover 3s forwards;
+    margin-bottom: 0%;
+}
+p {
+    padding: 8px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-style: italic;
+}
+.text {
+    font-size: 14px;
+    text-align: end;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+img {
+    float: left;
+    border-radius: 10px;
+    width: 130px;
+    height: 120px; 
+    text-align: center;
+}
+img:hover {
+    width: 127px;
+    height: 115px; 
+    border: 2px solid black;
+    box-shadow: 0 0 10px white;
+}
+h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+
+}
+.fb {
+    margin-left: 0px;
+}
+.accounts {
+    float: right;
+}
+button {
+    width: 45px;
+    height: 45px;
+    margin-top: 0;
+    margin-left: 25px;
+    background: transparent;
+    border: 2px solid gray;
+    font-family: Arial;
+    font-weight: 700;
+    color: white;
+    border-radius: 50px;
+}
+button:hover {
+    transition: 1s;
+    color: black;
+    background-color: #fff;
+    border: 3px solid black;
+    box-shadow: 0 0 20px red;
+}
+@keyframes hover {
+    from{
+        clip-path: polygon(0 100%, 0 1%, 0 1%, 0 100%);
+    }
+    to {
+        clip-path: polygon(0 100%, 0 1%, 100% 0, 100% 100%);
+    }
+}
+.container {
+    width: 295px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px 1px gray;
+
+}
+.for, .container  {
+    border-radius: 10px;
+}
+.container .for {
+    width: 293px;
+    height: 298px;
+    position: absolute;
+    background-color: rgb(19, 19, 19);
+    margin-top: 1px;
+    margin-left: 1px;
+}
+.container::before {
+    content: '';
+    width: 450px;
+    height: 500px;
+    background-image: conic-gradient(transparent, black, transparent, red, transparent, black, transparent, red);
+    box-shadow: 0 0 8px red ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+h3 {
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 6px;
+    font-size: 10px;
+    font-family: tahoma;
+    font-weight: 900;
+}
+span {
+    margin-left: 25px;
+}
+a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #fff;
+}
+img, button {
+    cursor: pointer;
+}
